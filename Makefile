@@ -1,5 +1,3 @@
-ATTACKPATH = /root/targets/$(subst attack-,target-,$(shell basename `pwd`))
-
 all: check-ctarget check-rtarget
 
 check-ctarget: ctarget-1 ctarget-2 ctarget-3
